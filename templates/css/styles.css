@@ -370,7 +370,7 @@ body {
   .carousel-indicators {
     margin-left: 0;
     left: 60%;
-    bottom: 0;
+    bottom: 10px;
   }
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003373}}
