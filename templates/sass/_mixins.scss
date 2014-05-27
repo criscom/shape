@@ -1,0 +1,27 @@
+// Media queries mixin - taken from SACFD p 152
+// =============================================================================
+
+@mixin MQ($canvas) {
+  @if $canvas == S {
+    @media only screen and (max-width: $S - .01) { // 288 - 479
+      @content;
+    }
+  }
+  @else if $canvas == M {
+    @media only screen and (max-width: $M - .01) { // 480 - 767
+      @content;
+    }
+  }
+  @else if $canvas == L { // 768 - 959
+    @media only screen and (max-width: $L - .01) {
+      @content; 
+    }
+  }
+
+    @else if $canvas == XL { // >= 960
+    @media only screen and (min-width: $L) {
+      @content; 
+    }
+  }
+
+}

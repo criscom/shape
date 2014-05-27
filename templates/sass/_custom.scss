@@ -55,6 +55,12 @@ body {
 .logobar {
 	float: left;
 	margin: 0;
+	@include MQ(S) {
+		width: 210px;
+	}
+	@media only screen and (max-width: 419px) {
+		width: 180px;
+	}
 }
 
 .header-right {
@@ -67,7 +73,6 @@ body {
 */
 width: 100%;
 height: auto;
-
 }
 
 //===========================================================
@@ -84,6 +89,14 @@ height: auto;
 
 .searchform {
 	margin-top: 55px;
+	@include MQ(S) {
+		width: 180px;
+	}
+	input {
+		@include MQ(S) {
+			width: 118px;
+		}
+	}
 }
 
 .search-visible {
@@ -108,9 +121,12 @@ height: auto;
 
 
 .search-toggle {
-	margin-top: 18px;
+	margin-top: 16px;
 	padding: 15px;
 	background-color: #666;
+	@include MQ(S) {
+		padding: 6px;
+	}
 }
 
 
@@ -228,7 +244,7 @@ height: auto;
 // Navbar MOBILE
 //===========================================================
 
-@media only screen and (max-width: 768px) { 
+@include MQ(M) { 
 	.navbar,
 	.navbar-default .navbar-nav > .active > a {
 		background-color: $color3 !important;
@@ -313,7 +329,7 @@ height: auto;
 }
 
 .content-container {
-	min-height: 600px;
+	min-height: 500px;
 }
 
 //===========================================================

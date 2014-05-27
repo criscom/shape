@@ -114,8 +114,10 @@ $indent-amount: 30px;
 //
 // added by criscom 05.09.2013
 
-$S: 30em; // 480px wide with 16px body font
-$M: 48em; // 768px wide with 16px body font
+$XS: 26em; // 420px
+$S: 31.25em; // 500px wide with 16px body font
+$M: 48.5em; // 776px wide with 16px body font
+$L: 60em; // 960px wide with 16px body font
 
 // =============================================================================
 // Partials to be shared with all .scss files.
