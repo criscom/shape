@@ -129,7 +129,8 @@ height: auto;
 	}
 }
 
-
+//–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+// END HEADER
 
 //===========================================================
 // NAVIGATION
@@ -294,6 +295,9 @@ height: auto;
 	}
 }
 
+//–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+// END NAVBAR
+
 //===========================================================
 // Breadcrumb
 
@@ -330,6 +334,35 @@ height: auto;
 
 .content-container {
 	min-height: 500px;
+}
+
+//–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+// END BREADCRUMB
+
+//===========================================================
+// Slider Frontpage
+@media only screen and (min-width: 769px) {
+	.carousel-caption {
+	    left: 50%;
+	    padding-bottom: 30px;
+	    right: 10%;
+	    width: 50%;
+	}
+	.carousel-caption {
+	    bottom: 20px;
+	    color: #FFFFFF;
+	    padding-top: 20px;
+	    position: absolute;
+	    text-align: left;
+	    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+	    z-index: 10;
+	}
+	
+	.carousel-indicators {
+		margin-left: 0;
+		left: 60%;
+		bottom: 0;
+	}
 }
 
 //===========================================================
