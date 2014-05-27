@@ -1,0 +1,362 @@
+
+/* Full width submenu as on anton-paar.com */
+/* Doesn't work on mobile devices */
+
+/*@media only screen and (min-width: 769px) {
+	.open {
+	position: static !important;
+	float: left !important;
+	}
+	.open > .dropdown-menu {
+		background-color: #353535;
+		color: #e6e6e6;
+		float: left;
+		width: 100%;
+	}
+
+	.open > .dropdown-menu li a {
+		color: white;
+	}
+}*/
+
+html {
+// Sticky footer styles: 2 lines
+	// position: relative;
+ //  min-height: 100%;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	position: relative;
+	min-height: 0;
+// Sticky footer styles
+// Margin bottom by footer height
+  // margin-bottom: 377px;
+}
+
+/* =========================================================== */
+/* Header > Logo Section */
+/* =========================================================== */
+
+
+.section-header {
+	background: url(../img/bg-header-repeat.gif) repeat scroll;
+	position: relative;
+	z-index: 9999;
+}
+
+.section-header .container {
+	background: url(../img/bg-header-960.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+	height: 90px;
+}
+
+.logobar {
+	float: left;
+	margin: 0;
+}
+
+.header-right {
+	float: right;
+}
+
+.logo img {
+/*	height: 60px;
+	width: 191px;
+*/
+width: 100%;
+height: auto;
+
+}
+
+//===========================================================
+// SEARCH
+
+.header-right {
+	position: relative;
+}
+
+.navbar-toggle {
+	float: left;
+	margin-left: 15px; 
+}
+
+.searchform {
+	margin-top: 55px;
+}
+
+.search-visible {
+	text-align: right;
+}
+
+.search-text {
+	color: white;
+}
+
+.search-button {
+	color: #c2c2c2;
+	background-image: url(../img/lupe.png);
+	background-color: transparent;
+	background-repeat: no-repeat;
+	height: 17px;
+	width: 100px;
+	box-shadow: none;
+	border: none;
+	background-position: center right;
+}
+
+
+.search-toggle {
+	margin-top: 18px;
+	padding: 15px;
+	background-color: #666;
+}
+
+
+
+//===========================================================
+// NAVIGATION
+//===========================================================
+
+/* Search form doesn't push navbar down */
+@media only screen and (min-width: 769px) {
+.navbar .container:before,
+.navbar .container:after,
+.nav:before, 
+.nav:after, 
+.navbar:before, 
+.navbar:after, 
+.navbar-header:before, 
+.navbar-header:after, 
+.navbar-collapse:before, 
+.navbar-collapse:after {
+	/*display: inline !important;*/
+	content: none;
+	}
+}	
+
+/* Background Image for navbar */
+@media only screen and (min-width: 769px) {
+	.navbar {
+		position: relative;
+		z-index: 10;
+		// background-image: url(../img/bg-topnavi.png);
+		background-image: none;
+		box-shadow: none;
+		background-color: $color3 !important;
+		height: 42px;
+		min-height: 42px;
+		border-top: 1px solid #FFFFFF;
+		background-repeat: repeat-x;
+		li {
+			border-left: 1px solid $color2;
+			height: 41px;
+			&:last-child {
+				border-right: 1px solid $color2;
+			}
+			&.active {
+				border: none;
+			}
+			ul li {
+				border: none;
+				&:last-child {
+					border: none;
+				}
+			}
+		}
+	}
+
+	.navbar-nav {
+		> li:hover,
+		> .active {
+		// background-image: url(../img/bg-topnavi.png);
+		// background-image: none !important;
+		// background-color: $color2;
+	
+		// background-repeat: repeat-x;
+		// background-position: 0 -40px;
+		}
+	}
+	
+	.navbar-nav {
+		> li,
+		> li.active {
+			a {
+					padding-top: 10px;
+					padding-bottom: 0;
+					background-image: none;
+					box-shadow: none;
+					background-color: transparent;
+					background-image: none !important;
+					text-transform: uppercase;
+					color: $color2 !important;
+			}
+		}
+	}
+
+	.navbar-static-top {
+		li:hover,
+		li.active {
+			height: 41px;
+			min-height: 41px;
+			background-color: $color2 !important;
+			a {
+				color: white !important;
+				background-image: none;
+				background-color: $color2 !important;
+			}
+		}
+	}
+	
+	.navbar-nav .open {
+			background-color: $color2 !important;
+			color: white !important;
+	
+		a {
+			background-color: $color2 !important;
+			color: white !important;
+		}
+	}
+	
+	.navbar-toggle {
+		margin-top: 7px;
+		background-color: $color4 !important;
+	}
+}
+//===========================================================
+// Navbar MOBILE
+//===========================================================
+
+@media only screen and (max-width: 768px) { 
+	.navbar,
+	.navbar-default .navbar-nav > .active > a {
+		background-color: $color3 !important;
+		background-image: none;
+	}
+	.navbar-toggle {
+		margin-top: 7px;
+		background-color: $color4 !important;
+	}
+	.navbar-collapse {
+		background-color: $color2 !important;
+		.open {
+			border-bottom: 1px solid white;
+		}
+	}
+
+	.navbar-default .navbar-nav > li > a,
+	.navbar-default .navbar-nav > li > a:hover,
+	.navbar-default .navbar-nav > li > a:focus {
+		color: white;
+	}
+
+	.navbar-default .navbar-nav > .active > a, 
+	.navbar-default .navbar-nav > .active > a:hover, 
+	.navbar-default .navbar-nav > .active > a:focus {
+		color: $color2;
+	}
+}
+
+//===========================================================
+// Submenu
+
+.dropdown-menu {
+	background-color: $color2;
+	box-shadow: none;
+	border: none;
+	left: -1px;
+	li {
+		a {
+		color: white !important;
+		&:hover {
+			text-decoration: underline;
+			color: white !important;
+			background-color: transparent;
+		}
+		}
+	}
+}
+
+//===========================================================
+// Breadcrumb
+
+.breadcrumb {
+	background-color: transparent;
+	padding: 0 0 15px 0;
+	margin: 10px 0 15px 0;
+	font-size: 12px;
+	font-size: 1.2rem;
+	line-height: 15px;
+	z-index: 10;
+	span {
+		background: none !important;
+		padding: 0 !important;
+		a {
+			color: $color2;
+			&:after {
+				content: " / ";
+			}
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+		&.active {
+			a {
+				text-decoration: underline;
+				&:after {
+				content: " ";
+				}
+			}
+		}
+	}
+}
+
+.content-container {
+	min-height: 600px;
+}
+
+//===========================================================
+// Sticky Footer
+//===========================================================
+
+#footer {
+	.footer-image {
+		background-image: url('../img/bg-machines-transparent-footer.png');
+		background-repeat: no-repeat;
+		background-position: center 97px;
+		height: 277px;
+	}
+	.footer-content  {
+  	width: 100%;
+  	/* Set the fixed height of the footer here */
+  	height: 281px;
+  	border-top: 3px solid $color2;
+  	@include background-image(linear-gradient(top, $color3, $color4));
+  	.row {
+  		margin-top: 12px;
+  		font-size: 12px;
+  		font-style: 1.2rem;
+  		li a {
+  			line-height: auto;
+  			padding-top: 0;
+  			text-transform: none;
+  			&:hover, &:focus {
+  				background-color: transparent;
+  				color: $color2;
+  				text-decoration: underline;
+  			}
+  		}
+  	}
+  }
+ }
+
+ .footer-content {
+ 	.container {
+ 		  		background-image: url('../img/bg-ornament-footer.png');
+  		background-repeat: no-repeat;
+  		background-position: 64px top;
+  		background-size: 654px 90px;
+  		height: 90px;
+ 	}
+ }

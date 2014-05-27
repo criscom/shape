@@ -1,0 +1,157 @@
+
+/* Full width submenu as on anton-paar.com */
+/* Doesn't work on mobile devices */
+
+/*@media only screen and (min-width: 769px) {
+	.open {
+	position: static !important;
+	float: left !important;
+	}
+	.open > .dropdown-menu {
+		background-color: #353535;
+		color: #e6e6e6;
+		float: left;
+		width: 100%;
+	}
+
+	.open > .dropdown-menu li a {
+		color: white;
+	}
+}*/
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	position: relative;
+}
+
+/* =========================================================== */
+/* Header > Logo Section */
+/* =========================================================== */
+
+
+.section-header {
+	background: url(../img/bg-header-repeat.gif) repeat scroll;
+	position: relative;
+	z-index: 9999;
+}
+
+.section-header .container {
+	background: url(../img/bg-header-960.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+	height: 90px;
+}
+
+.logobar {
+	float: left;
+	margin: 0;
+}
+
+.header-right {
+	float: right;
+}
+
+.logo img {
+/*	height: 60px;
+	width: 191px;
+*/
+width: 100%;
+height: auto;
+
+}
+
+/* Search form opens above navbar */
+.navbar {
+	position: relative;
+	z-index: 10;
+	background-image: url(../img/bg-topnavi.png);
+	height: 42px;
+	min-height: 42px;
+	border-top: 1px solid #FFFFFF;
+	background-repeat: repeat-x;
+}
+
+/* Search form doesn't push navbar down */
+.navbar .container:before,
+.navbar .container:after,
+.nav:before, 
+.nav:after, 
+.navbar:before, 
+.navbar:after, 
+.navbar-header:before, 
+.navbar-header:after, 
+.navbar-collapse:before, 
+.navbar-collapse:after {
+	/*display: inline !important;*/
+	content: none;
+}
+
+.navbar-nav > li {
+
+}
+
+.navbar-default .navbar-nav > .active {
+	background-image: url(../img/bg-topnavi.png);
+	height: 42px;
+	min-height: 42px;
+	background-repeat: repeat-x;
+	background-position: 0 -40px;
+	background-color: transparent;
+}
+
+.navbar-nav > li > a,
+.navbar-default .navbar-nav > .active > a {
+	padding-top: 10px;
+	padding-bottom: 0;
+	background-image: none;
+	box-shadow: none;
+	background-color: transparent;
+	text-transform: uppercase;
+}
+
+.navbar-default .navbar-nav > .active > a {
+	color: white;
+}
+
+.navbar-brand,
+.search-text {
+	color: white;
+}
+
+
+.navbar-toggle {
+	float: left;
+	margin-left: 15px; 
+}
+
+.header-right {
+	position: relative;
+}
+
+.searchform {
+	margin-top: 55px;
+}
+
+.search-visible {
+	text-align: right;
+}
+
+.search-button {
+	color: #c2c2c2;
+	background-image: url(../img/lupe.png);
+	background-color: transparent;
+	background-repeat: no-repeat;
+	height: 17px;
+	width: 100px;
+	box-shadow: none;
+	border: none;
+	background-position: center right;
+}
+
+
+.search-toggle {
+	margin-top: 18px;
+	padding: 15px;
+	background-color: #666;
+}
+
