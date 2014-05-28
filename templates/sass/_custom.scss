@@ -50,6 +50,7 @@ body {
 	background-repeat: no-repeat;
 	background-position: top center;
 	height: 90px;
+	width: 940px
 }
 
 .logobar {
@@ -154,6 +155,7 @@ height: auto;
 }	
 
 /* Background Image for navbar */
+// 769px specific BEGIN
 @media only screen and (min-width: 769px) {
 	.navbar {
 		position: relative;
@@ -166,6 +168,9 @@ height: auto;
 		min-height: 42px;
 		border-top: 1px solid #FFFFFF;
 		background-repeat: repeat-x;
+		.container {
+			width: 940px;
+		}
 		li {
 			border-left: 1px solid $color2;
 			height: 41px;
@@ -240,7 +245,7 @@ height: auto;
 		margin-top: 7px;
 		background-color: $color4 !important;
 	}
-}
+} // 769 specific END
 //===========================================================
 // Navbar MOBILE
 //===========================================================
@@ -299,6 +304,15 @@ height: auto;
 // END NAVBAR
 
 //===========================================================
+// CONTENT GENERAL
+//===========================================================
+
+.content-container {
+	width: 940px;
+	min-height: 500px;
+}
+
+//===========================================================
 // Breadcrumb
 
 .breadcrumb {
@@ -332,10 +346,6 @@ height: auto;
 	}
 }
 
-.content-container {
-	min-height: 500px;
-}
-
 //–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 // END BREADCRUMB
 
@@ -361,7 +371,7 @@ height: auto;
 	.carousel-indicators {
 		margin-left: 0;
 		left: 60%;
-		bottom: 10px;
+		bottom: 0;
 	}
 }
 
@@ -402,10 +412,11 @@ height: auto;
 
  .footer-content {
  	.container {
- 		  		background-image: url('../img/bg-ornament-footer.png');
+ 		  background-image: url('../img/bg-ornament-footer.png');
   		background-repeat: no-repeat;
   		background-position: 64px top;
   		background-size: 654px 90px;
   		height: 90px;
+  		width: 940px;
  	}
  }
