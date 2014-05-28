@@ -54,33 +54,38 @@ body {
   background-repeat: no-repeat;
   background-position: top center;
   height: 90px;
-  width: 940px;
+}
+@media only screen and (min-width: 769px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\0000348}}
+  .section-header .container {
+    width: 940px;
+  }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\0000356}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\0000358}}
 .logobar {
   float: left;
   margin: 0;
 }
 @media only screen and (max-width: 31.24em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\0000356}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\0000358}}
   .logobar {
     width: 210px;
   }
 }
 @media only screen and (max-width: 419px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\0000356}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\0000358}}
   .logobar {
     width: 180px;
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\0000367}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\0000369}}
 .header-right {
   float: right;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\0000371}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\0000373}}
 .logo img {
   /*	height: 60px;
   	width: 191px;
@@ -89,45 +94,45 @@ body {
   height: auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\0000382}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\0000384}}
 .header-right {
   position: relative;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\0000386}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\0000388}}
 .navbar-toggle {
   float: left;
   margin-left: 15px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\0000391}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\0000393}}
 .searchform {
   margin-top: 55px;
 }
 @media only screen and (max-width: 31.24em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\0000391}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\0000393}}
   .searchform {
     width: 180px;
   }
 }
 @media only screen and (max-width: 31.24em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\0000396}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\0000398}}
   .searchform input {
     width: 118px;
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003103}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003105}}
 .search-visible {
   text-align: right;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003107}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003109}}
 .search-text {
   color: white;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003111}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003113}}
 .search-button {
   color: #c2c2c2;
   background-image: url(../img/lupe.png);
@@ -140,14 +145,14 @@ body {
   background-position: center right;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003124}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003126}}
 .search-toggle {
   margin-top: 16px;
   padding: 15px;
   background-color: #666;
 }
 @media only screen and (max-width: 31.24em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003124}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003126}}
   .search-toggle {
     padding: 6px;
   }
@@ -155,7 +160,7 @@ body {
 
 /* Search form doesn't push navbar down */
 @media only screen and (min-width: 769px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003151}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003153}}
   .navbar .container:before,
   .navbar .container:after,
   .nav:before,
@@ -172,7 +177,7 @@ body {
 }
 /* Background Image for navbar */
 @media only screen and (min-width: 769px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003160}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003162}}
   .navbar {
     position: relative;
     z-index: 10;
@@ -184,33 +189,29 @@ body {
     border-top: 1px solid #FFFFFF;
     background-repeat: repeat-x;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003171}}
-  .navbar .container {
-    width: 940px;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003174}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003178}}
   .navbar li {
     border-left: 1px solid #353535;
     height: 41px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003177}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003181}}
   .navbar li:last-child {
     border-right: 1px solid #353535;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003180}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003184}}
   .navbar li.active {
     border: none;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003183}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003187}}
   .navbar li ul li {
     border: none;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003185}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003189}}
   .navbar li ul li:last-child {
     border: none;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003207}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003211}}
   .navbar-nav > li a,
   .navbar-nav > li.active a {
     padding-top: 10px;
@@ -223,14 +224,14 @@ body {
     color: #353535 !important;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003222}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003226}}
   .navbar-static-top li:hover,
   .navbar-static-top li.active {
     height: 41px;
     min-height: 41px;
     background-color: #353535 !important;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003226}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003230}}
   .navbar-static-top li:hover a,
   .navbar-static-top li.active a {
     color: white !important;
@@ -238,85 +239,96 @@ body {
     background-color: #353535 !important;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003234}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003238}}
   .navbar-nav .open {
     background-color: #353535 !important;
     color: white !important;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003238}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003242}}
   .navbar-nav .open a {
     background-color: #353535 !important;
     color: white !important;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003244}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003248}}
   .navbar-toggle {
     margin-top: 7px;
     background-color: #f0f0f0 !important;
   }
 }
+@media only screen and (min-width: 769px) and (min-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003173}}
+  .navbar .container {
+    width: 940px;
+  }
+}
 @media only screen and (max-width: 48.49em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003255}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003259}}
   .navbar,
   .navbar-default .navbar-nav > .active > a {
     background-color: #c2c2c2 !important;
     background-image: none;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003259}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003263}}
   .navbar-toggle {
     margin-top: 7px;
     background-color: #f0f0f0 !important;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003263}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003267}}
   .navbar-collapse {
     background-color: #353535 !important;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003265}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003269}}
   .navbar-collapse .open {
     border-bottom: 1px solid white;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003272}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003276}}
   .navbar-default .navbar-nav > li > a,
   .navbar-default .navbar-nav > li > a:hover,
   .navbar-default .navbar-nav > li > a:focus {
     color: white;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003278}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003282}}
   .navbar-default .navbar-nav > .active > a,
   .navbar-default .navbar-nav > .active > a:hover,
   .navbar-default .navbar-nav > .active > a:focus {
     color: #353535;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003286}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003290}}
 .dropdown-menu {
   background-color: #353535;
   box-shadow: none;
   border: none;
   left: -1px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003292}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003296}}
 .dropdown-menu li a {
   color: white !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003294}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003298}}
 .dropdown-menu li a:hover {
   text-decoration: underline;
   color: white !important;
   background-color: transparent;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003310}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003314}}
 .content-container {
-  width: 940px;
   min-height: 500px;
 }
+@media only screen and (min-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003314}}
+  .content-container {
+    width: 940px;
+  }
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003318}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003326}}
 .breadcrumb {
   background-color: transparent;
   padding: 0 0 15px 0;
@@ -326,34 +338,34 @@ body {
   line-height: 15px;
   z-index: 10;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003326}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003334}}
 .breadcrumb span {
   background: none !important;
   padding: 0 !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003329}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003337}}
 .breadcrumb span a {
   color: #353535;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003331}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003339}}
 .breadcrumb span a:after {
   content: " / ";
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003334}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003342}}
 .breadcrumb span a:hover {
   text-decoration: underline;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003339}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003347}}
 .breadcrumb span.active a {
   text-decoration: underline;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003341}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003349}}
 .breadcrumb span.active a:after {
   content: " ";
 }
 
 @media only screen and (min-width: 769px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003355}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003363}}
   .carousel-caption {
     left: 50%;
     padding-bottom: 30px;
@@ -361,7 +373,7 @@ body {
     width: 50%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003361}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003369}}
   .carousel-caption {
     bottom: 20px;
     color: #FFFFFF;
@@ -372,21 +384,118 @@ body {
     z-index: 10;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003371}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003379}}
   .carousel-indicators {
     margin-left: 0;
     left: 60%;
     bottom: 0;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003383}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003386}}
+.carousel {
+  border: 1px solid #c2c2c2;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003390}}
+.carousel-wrapper {
+  padding: 15px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003395}}
+.slider-navi {
+  background: #f0f0f0;
+  border-top: 1px solid gainsboro;
+  height: 30px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003399}}
+.slider-navi:before, .slider-navi:after {
+  conten: " ";
+  display: table;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003403}}
+.slider-navi:after {
+  clear: both;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003409}}
+.carousel-control {
+  width: 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003410}}
+.carousel-control.left, .carousel-control.right {
+  background-image: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003420}}
+.glyphicon-chevron-left:before,
+.glyphicon-chevron-right:before {
+  content: none !important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003427}}
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right,
+.carousel-control .icon-prev,
+.carousel-control .icon-next {
+  width: 16px;
+  height: 16px;
+  top: 98%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003434}}
+.carousel-control .icon-prev,
+.carousel-control .glyphicon-chevron-left {
+  left: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003439}}
+.carousel-control .icon-next,
+.carousel-control .glyphicon-chevron-right {
+  right: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003443}}
+.glyphicon-chevron-left {
+  background: url("../img/slider-icons.png") no-repeat 0px -32px;
+  left: 5px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003448}}
+.glyphicon-chevron-right {
+  background: url("../img/slider-icons.png") no-repeat 0px -16px;
+  left: 5px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003458}}
+.carousel-indicators {
+  margin-bottom: 2px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003460}}
+.carousel-indicators li {
+  border: 0;
+  border-radius: 0;
+  width: 16px;
+  height: 16px;
+  margin: 0 10px 0 0;
+  padding: 0;
+  background: url("../img/slider-icons.png") no-repeat 0px 0px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003468}}
+.carousel-indicators li.active {
+  background: url("../img/slider-icons.png") no-repeat -16px 0px;
+  width: 16px;
+  height: 16px;
+  margin: 0 10px 0 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003482}}
 #footer .footer-image {
   background-image: url("../img/bg-machines-transparent-footer.png");
   background-repeat: no-repeat;
   background-position: center 97px;
   height: 277px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003389}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003488}}
 #footer .footer-content {
   width: 100%;
   /* Set the fixed height of the footer here */
@@ -398,31 +507,36 @@ body {
   background-image: -o-linear-gradient(top, #c2c2c2, #f0f0f0);
   background-image: linear-gradient(top, #c2c2c2, #f0f0f0);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003395}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003494}}
 #footer .footer-content .row {
   margin-top: 12px;
   font-size: 12px;
   font-style: 1.2rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003399}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003498}}
 #footer .footer-content .row li a {
   line-height: auto;
   padding-top: 0;
   text-transform: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003403}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003502}}
 #footer .footer-content .row li a:hover, #footer .footer-content .row li a:focus {
   background-color: transparent;
   color: #353535;
   text-decoration: underline;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003414}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003513}}
 .footer-content .container {
   background-image: url("../img/bg-ornament-footer.png");
   background-repeat: no-repeat;
   background-position: 64px top;
   background-size: 654px 90px;
   height: 90px;
-  width: 940px;
+}
+@media only screen and (min-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/shapetec\/private\/templates\/sass\/_custom\.scss}line{font-family:\00003513}}
+  .footer-content .container {
+    width: 940px;
+  }
 }

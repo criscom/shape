@@ -50,7 +50,9 @@ body {
 	background-repeat: no-repeat;
 	background-position: top center;
 	height: 90px;
-	width: 940px
+	@media only screen and (min-width: 769px) {
+		width: 940px
+	}
 }
 
 .logobar {
@@ -169,7 +171,9 @@ height: auto;
 		border-top: 1px solid #FFFFFF;
 		background-repeat: repeat-x;
 		.container {
-			width: 940px;
+			@media only screen and (min-width: 992px) {
+				width: 940px;
+			}
 		}
 		li {
 			border-left: 1px solid $color2;
@@ -308,8 +312,12 @@ height: auto;
 //===========================================================
 
 .content-container {
-	width: 940px;
+	@media only screen and (min-width: 992px) {
+  	width: 940px;
+  }
+
 	min-height: 500px;
+
 }
 
 //===========================================================
@@ -375,6 +383,97 @@ height: auto;
 	}
 }
 
+.carousel {
+	border: 1px solid $color3;
+}
+
+.carousel-wrapper {
+	padding: 15px;
+}
+
+// Slider navigation at the bottom of the frontpage slider
+.slider-navi {
+	background: $color4;
+	border-top: 1px solid lighten($color3, 10%);
+	height: 30px;
+	&:before, &:after {
+		conten: " ";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+// removing the background for the carousel controls
+.carousel-control {
+	&.left, &.right {
+		background-image: none;
+	}
+	width: 20px;
+}
+
+//===========================================================
+// BEGIN styling the left and right navigation
+
+.glyphicon-chevron-left:before,
+.glyphicon-chevron-right:before {
+	content: none !important;
+}
+
+.carousel-control .glyphicon-chevron-left, 
+.carousel-control .glyphicon-chevron-right, 
+.carousel-control .icon-prev, 
+.carousel-control .icon-next {
+	width: 16px;
+	height: 16px;
+	top: 98%;
+}
+
+.carousel-control .icon-prev, 
+.carousel-control .glyphicon-chevron-left {
+	left: 100%;
+}
+
+.carousel-control .icon-next, 
+.carousel-control .glyphicon-chevron-right {
+	right: 100%;
+}
+
+.glyphicon-chevron-left {
+	background: url('../img/slider-icons.png') no-repeat 0px -32px;
+	left: 5px;
+}
+
+.glyphicon-chevron-right {
+	background: url('../img/slider-icons.png') no-repeat 0px -16px;
+	left: 5px
+}
+// END styling the left and right navigation
+//–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+//===========================================================
+// BEGIN styling the carousel indicators
+
+.carousel-indicators {
+	margin-bottom: 2px;
+	li {
+		border: 0;
+		border-radius: 0;
+		width: 16px;
+		height: 16px;
+		margin: 0 10px 0 0;
+		padding: 0;
+		background: url('../img/slider-icons.png') no-repeat 0px 0px;
+		&.active {
+			background: url('../img/slider-icons.png') no-repeat -16px 0px;
+			width: 16px;
+			height: 16px;
+			margin: 0 10px 0 0;
+		}
+	}
+}
+
 //===========================================================
 // Sticky Footer
 //===========================================================
@@ -417,6 +516,8 @@ height: auto;
   		background-position: 64px top;
   		background-size: 654px 90px;
   		height: 90px;
-  		width: 940px;
+  		@media only screen and (min-width: 992px) {
+  			width: 940px;
+  		}
  	}
  }
