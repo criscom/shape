@@ -32,6 +32,8 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 	position: relative;
 	min-height: 0;
+	background-image: image-url('stripes.png');
+	background-repeat: repeat;
 // Sticky footer styles
 // Margin bottom by footer height
   // margin-bottom: 377px;
@@ -43,6 +45,21 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
 	color: $color1;
+}
+
+h1 {
+	font-size: 26px;
+	font-size: 2.5rem;
+}
+
+h2 {
+	font-size: 20px;
+	font-size: 2rem;
+}
+
+h3, h4, h5, h6 {
+	font-size: 16px;
+	font-size: 1.6rem;
 }
 
 
@@ -343,13 +360,166 @@ height: auto;
 	@media only screen and (min-width: 992px) {
   	width: 940px;
   }
+	min-height: 500px; // remove on live site
+}
 
-	min-height: 500px;
+.content-wrapper {
+	border: 1px solid $color3;
+	// box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+	background-color: white;
+	&:after, &:before {
+		content: " ";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
 
+#leftContentWrapper #content_image .csc-textpic {
+	margin-top: 20px;
+	margin-top: 2rem;
+	margin-bottom: 20px;
+	margin-bottom: 2rem;
+}
+
+//===========================================================
+// Mail Form
+//===========================================================
+
+.csc-mailform form {
+	margin-bottom: 20px;
+	li.csc-form-element-textline,
+	li.csc-form-element-textarea { 
+		position: relative; margin: 10px 0;
+		label { 
+			position: absolute; top: 6px; left: 10px; cursor:	text;
+		}
+	}
+}
+
+.csc-form-element-textline input,
+.csc-form-22 textarea {
+		@include box-shadow(inset 0px 1px 2px 0 $color4);
+		background-image: image-url('stripes.png');
+		background-repeat: repeat;
+		@include border-radius(4px);
+		// border: 1px solid $color2;
+}
+
+li.csc-form-element-textarea label {
+	top: 22px !important;
+}
+
+.csc-mailform li input[type="text"] {
+	height: 32px;
+	height: 3.2rem;
+}
+
+.csc-mailform label {
+	font-weight: 300;
+	em {
+	display: inline-block;
+	color: $color1;
+	}
+	strong { // red rectangle when required information is not given in the form
+		// display: none;
+		margin-top: -22px;
+		margin-left: -4px;
+		line-height: 1;
+		border: 1px solid $color1;
+		color: transparent;
+	}
+}
+
+.csc-form-2 {
+	select {
+		width: 392px !important;
+		height: 32px;
+		height: 3.2rem;
+		padding-top: 5px !important;
+		background-image: image-url('stripes.png');
+		background-repeat: repeat;
+		@include border-radius(4px);
+	}
+	border-bottom: 1px solid $color3;
+	padding-bottom: 6px !important;
+	margin-bottom: 16px !important;
+}
+
+.csc-form-12, .csc-form-13 {
+	float: left;
 }
 
 
+.csc-form-12 {
+	margin-right: 10px !important;
+}
 
+.csc-form-12, .csc-form-13 {
+	label, input {
+	width: 15px !important
+	}
+	label {
+		float: right !important;
+	}
+	input {
+		float: left !important;
+		margin-right: 8px;
+	}
+}
+
+
+.csc-form-14, .csc-form-15,
+.csc-form-16, .csc-form-17,
+.csc-form-20, .csc-form-21 {
+	float: left;
+	input {
+		width: 194px !important;
+	}
+}
+
+.csc-form-14, .csc-form-16, .csc-form-20 {
+	margin-right: 6px !important;
+}
+
+.csc-form-14,
+.csc-form-16, .csc-form-18,
+.csc-form-22 {
+	clear: left;
+}
+
+.csc-form-18, .csc-form-19,
+.csc-form-22 {
+	input {
+	width: 392px !important;
+	}
+}
+
+.csc-form-22 {
+	border-top: 1px solid $color3;
+	padding-top: 16px !important;
+	margin-top: 16px !important;
+}
+
+.csc-mailform input[type="submit"] {
+	padding: 4px 24px;
+	line-height: 1;
+	color: white;
+	background-color: $color1;
+	border: none;
+	@include border-radius(23px);
+	border: 1px solid darken($color1, 10%);
+	text-transform: uppercase;
+	@include box-shadow(0 1px 2px rgba(0, 0, 0, 0.5));
+	@include background-image(linear-gradient(lighten($color1, 25%), $color1));
+	float: right;
+	&:hover, &:focus {
+		// @include box-shadow(2px 2px 2px rgba(153,0,0, 0.5));
+		// border-color: rgb(51,204,255); //darken($color1, 25%);
+		@include background-image(linear-gradient(lighten($color1, 40%), lighten($color1, 25%)));
+	}
+}
 
 //===========================================================
 // Breadcrumb
