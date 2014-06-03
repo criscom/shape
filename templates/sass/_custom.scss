@@ -400,15 +400,11 @@ height: auto;
 
 .csc-form-element-textline input,
 .csc-form-22 textarea {
-		@include box-shadow(inset 0px 1px 2px 0 $color4);
+		@include box-shadow(inset 0px 1px 2px 0 $color3);
 		background-image: image-url('stripes.png');
 		background-repeat: repeat;
 		@include border-radius(4px);
-		// border: 1px solid $color2;
-}
-
-li.csc-form-element-textarea label {
-	top: 22px !important;
+		border: none !important;
 }
 
 .csc-mailform li input[type="text"] {
@@ -438,6 +434,7 @@ li.csc-form-element-textarea label {
 		height: 32px;
 		height: 3.2rem;
 		padding-top: 5px !important;
+		background-color: transparent;
 		background-image: image-url('stripes.png');
 		background-repeat: repeat;
 		@include border-radius(4px);
@@ -449,6 +446,8 @@ li.csc-form-element-textarea label {
 
 .csc-form-12, .csc-form-13 {
 	float: left;
+	list-style-type: none !important;
+	list-style: none !important;
 }
 
 
@@ -500,6 +499,15 @@ li.csc-form-element-textarea label {
 	border-top: 1px solid $color3;
 	padding-top: 16px !important;
 	margin-top: 16px !important;
+	textarea {
+		width: 394px !important;
+	}
+}
+
+li.csc-form-element-textarea {
+	label {
+		top: 22px !important;
+	}
 }
 
 .csc-mailform input[type="submit"] {
