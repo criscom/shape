@@ -1,7 +1,15 @@
-      <!-- Partials section -->
+  <!-- carousel left, text right -->
+  
+  <div id="content_left" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+  
+
+  <!-- Partials section -->
+  <f:format.html parseFuncTSPath="">{contentLeft}</f:format.html>
+
+
     <!-- Carousel
     ================================================== -->
-    <div id="frontpageCarousel" class="carousel slide" data-ride="carousel">
+    <div id="singlepageCarousel" class="carousel slide" data-ride="carousel">
       <div class="carousel-wrapper">
         <div class="carousel-inner">
           <div class="item active">
@@ -38,14 +46,19 @@
       </div>
             <!-- Indicators -->
       <div class="slider-navi">
-        <a class="left carousel-control" href="#frontpageCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+        <a class="left carousel-control" href="#singlepageCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
         <ol class="carousel-indicators">
-          <li data-target="#frontpageCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#frontpageCarousel" data-slide-to="1"></li>
-          <li data-target="#frontpageCarousel" data-slide-to="2"></li>
+          <li data-target="#singlepageCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#singlepageCarousel" data-slide-to="1"></li>
+          <li data-target="#singlepageCarousel" data-slide-to="2"></li>
         </ol>
-        <a class="right carousel-control" href="#frontpageCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+        <a class="right carousel-control" href="#singlepageCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
       </div>
     </div><!-- /.carousel -->
 
-      <!-- Partials section END --> 
+</div><!-- /#content_left -->
+
+<div id="content_right" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+  <f:format.html parseFuncTSPath="">{contentRight}</f:format.html>
+</div>
+
