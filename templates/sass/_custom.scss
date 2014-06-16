@@ -62,6 +62,14 @@ h3, h4, h5, h6 {
 	font-size: 1.6rem;
 }
 
+ul li {
+	a {
+	color: $color2;
+	&:hover, &:focus {
+		color: $color2;
+	}
+	}
+}
 
 /* =========================================================== */
 /* Header > Logo Section */
@@ -164,6 +172,31 @@ height: auto;
 	}
 }
 
+.lt-ie9,
+.lt-ie10 {
+	body {
+		// z-index: 100;
+	}
+	.section-header {
+		// position: relative;
+		// z-index: 2000;
+	}
+	.navbar {
+		// z-index: 200;
+	}
+	.header-right {
+		position: relative;
+		width: 240px;
+	}
+	.search-toggle {
+		position: fixed;
+		z-index: 3000;
+		width: 240px;
+		// left: 700px;
+		
+	}
+}
+
 //–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 // END HEADER
 
@@ -192,8 +225,14 @@ height: auto;
 }		
 
 /* Background Image for navbar */
+
+//===========================================================
 // 769px specific BEGIN
+
 @media only screen and (min-width: 768px) {
+	.navbar-static-top {
+		margin-bottom: 0 !important;
+	}
 	.navbar {
 		position: relative;
 		z-index: 10;
@@ -293,9 +332,16 @@ height: auto;
 	}
 } // 769 specific END
 
+// END 769px specific
+//–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+//===========================================================
+// IE 8 STYLES FOR NAVBAR
+
 .lt-ie9 .navbar .container {
 	width: 940px;
 }
+
 
 .lt-ie9 {
 	.navbar {
@@ -337,19 +383,7 @@ height: auto;
 	.navbar-default .navbar-nav > .active > a:focus {
 		background-color: $color2 !important;
 		height: 40px;
-		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#353535', endColorstr='#353535', GradientType=0)
-	}
-
-	.navbar-nav {
-		> li:hover,
-		> .active {
-		// background-image: url(../img/bg-topnavi.png);
-		// background-image: none !important;
-		// background-color: $color2;
-	
-		// background-repeat: repeat-x;
-		// background-position: 0 -40px;
-		}
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#353535', endColorstr='#353535', GradientType=0);
 	}
 	
 	.navbar-nav {
@@ -396,7 +430,12 @@ height: auto;
 	}
 } // lt-ie9 END
 
+.lt-ie10 .navbar-nav li.active a {
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#353535', endColorstr='#353535', GradientType=0);
+}
 
+// END IE 8 STYLES FOR NAVBAR
+//–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
 //===========================================================
 // Navbar MOBILE
@@ -469,7 +508,7 @@ height: auto;
 	@media only screen and (min-width: 992px) {
   	width: 940px;
   }
-	min-height: 500px; // remove on live site
+	// min-height: 500px; // remove on live site
 }
 
 .lt-ie9 .container {
@@ -516,6 +555,22 @@ height: auto;
 	margin-top: 2rem;
 	margin-bottom: 20px;
 	margin-bottom: 2rem;
+	}
+}
+
+// margin to bottom of container
+
+.csc-default {
+// margin to bottom of container
+	&:last-child {
+	margin-bottom: 30px;
+	margin-bottom: 3rem;
+	p {
+		.btn {
+			margin-top: 10px;
+			margin-top: 1rem;
+		}
+		}
 	}
 }
 
@@ -670,17 +725,19 @@ li.csc-form-element-textarea {
 	line-height: 1;
 	color: white;
 	background-color: $color1;
-	border: none;
 	@include border-radius(23px);
 	border: 1px solid darken($color1, 10%);
 	text-transform: uppercase;
 	@include box-shadow(0 1px 2px rgba(0, 0, 0, 0.5));
-	@include background-image(linear-gradient(lighten($color1, 25%), $color1));
+	// @include background-image(linear-gradient(lighten($color1, 25%), $color1));
+	border: 1px solid #900;
+	@include background-image(linear-gradient(#c50000, #930000));
 	float: right;
 	&:hover, &:focus {
 		// @include box-shadow(2px 2px 2px rgba(153,0,0, 0.5));
 		// border-color: rgb(51,204,255); //darken($color1, 25%);
-		@include background-image(linear-gradient(lighten($color1, 40%), lighten($color1, 25%)));
+		@include background-image(linear-gradient(darken(#930000, 10%), darken(#930000, 2%)));
+		// background-color: darken(#930000, 2%);
 	}
 }
 
@@ -689,12 +746,24 @@ li.csc-form-element-textarea {
 
 .breadcrumb {
 	background-color: transparent;
-	padding: 0 0 15px 0;
-	margin: 10px 0 15px 0;
+	padding: 0;
+	margin: 16px 0;
 	font-size: 12px;
 	font-size: 1.2rem;
 	line-height: 15px;
 	z-index: 10;
+
+a {
+			color: $color2;
+			&:after {
+				// content: " / ";
+			}
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+
+
 	span {
 		background: none !important;
 		padding: 0 !important;
@@ -928,8 +997,8 @@ li.csc-form-element-textarea {
 	.footer-image {
 		background-image: url('../img/bg-machines-transparent-footer.png');
 		background-repeat: no-repeat;
-		background-position: center 97px;
-		height: 277px;
+		background-position: center 7px; //97px;
+		height: 187px; // 277px;
 	}
 	.footer-content  {
   	width: 100%;
