@@ -62,13 +62,27 @@ h3, h4, h5, h6 {
 	font-size: 1.6rem;
 }
 
-ul li {
+iframe {
+	width: 100%;
+}
+
+//===========================================================
+// Links
+//===========================================================
+
+h2,
+ul li,
+.search-result-url {
 	a {
 	color: $color2;
 	&:hover, &:focus {
 		color: $color2;
 	}
 	}
+}
+
+.hit {
+	color: $color1;
 }
 
 /* =========================================================== */
@@ -105,6 +119,7 @@ ul li {
 
 .header-right {
 	float: right;
+
 }
 
 .logo img {
@@ -123,6 +138,7 @@ height: auto;
 
 .header-right {
 	position: relative;
+	width: 240px !important;
 }
 
 .navbar-toggle {
@@ -134,6 +150,10 @@ height: auto;
 	margin-top: 55px;
 	@include MQ(S) {
 		width: 180px;
+		float: right;
+	}
+	@media only screen and (max-width: 480px) {
+		margin-top: 0;
 	}
 	input {
 		@include MQ(S) {
@@ -167,8 +187,12 @@ height: auto;
 	margin-top: 16px;
 	padding: 15px;
 	background-color: #666;
+	position: absolute;
+	width: 240px;
 	@include MQ(S) {
 		padding: 6px;
+		width: 180px;
+		margin-top: 22px;
 	}
 }
 
@@ -197,6 +221,7 @@ height: auto;
 	}
 }
 
+
 //–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 // END HEADER
 
@@ -220,7 +245,7 @@ height: auto;
 .navbar-collapse:before, 
 .navbar-collapse:after {
 	/*display: inline !important;*/
-	content: none;
+	// content: none;
 	}
 }		
 
@@ -275,14 +300,15 @@ height: auto;
 	}
 
 	.navbar-nav {
-		> li:hover,
-		> .active {
-		// background-image: url(../img/bg-topnavi.png);
-		// background-image: none !important;
-		// background-color: $color2;
-	
-		// background-repeat: repeat-x;
-		// background-position: 0 -40px;
+		> li {
+			> a {
+				padding-left: 16px;
+				padding-right: 16px;
+				@media only screen and (min-width: 992px) {
+				padding-right: 31px !important;
+				padding-left: 32px !important;
+				}
+			}
 		}
 	}
 	
@@ -574,6 +600,331 @@ height: auto;
 	}
 }
 
+
+
+
+//===========================================================
+// Breadcrumb
+
+.breadcrumb {
+	background-color: transparent;
+	padding: 0;
+	margin: 16px 0;
+	font-size: 12px;
+	font-size: 1.2rem;
+	line-height: 15px;
+	z-index: 10;
+
+a {
+			color: $color2;
+			&:after {
+				// content: " / ";
+			}
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+
+
+	span {
+		background: none !important;
+		padding: 0 !important;
+		a {
+			color: $color2;
+			&:after {
+				content: " / ";
+			}
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+		&.active {
+			a {
+				text-decoration: underline;
+				&:after {
+				content: " ";
+				}
+			}
+		}
+	}
+}
+
+//–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+// END BREADCRUMB
+
+
+
+
+//===========================================================
+// Slider Frontpage
+
+@media only screen and (min-width: 992px) {
+	.carousel-caption {
+	    left: 520px; // 540px; //50%;
+	    padding-top: 20px; // 63px; // 20px;
+	    padding-bottom: 30px;
+	    padding-left: 20px;
+	    width: 356px; // 330px; // 50%;
+	    // position: absolute;
+	    text-align: left;
+	    // z-index: 10;
+
+	}
+	.carousel-caption {
+	    // bottom: 20px;
+	    // color: #FFFFFF;
+	    // text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+	    h1 {
+	    	margin-top: 0;
+	    	margin-bottom: 20px;
+	    	margin-bottom: 2rem;
+	    }
+	}
+	
+	.carousel-indicators {
+		bottom: 0;
+	}
+
+	#frontpageCarousel .carousel-indicators {
+		left: 60%;
+		margin-left: 0;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.carousel-caption {
+		top: 0;
+	}
+}
+
+// .carousel,
+#frontpageCarousel {
+	border: 1px solid $color3;
+}
+
+.carousel-inner {
+	position: relative;
+	z-index: 1;
+	img {
+		z-index: 1;
+	}
+}
+
+.carousel-caption {
+    color: #FFFFFF;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 10;
+    h1 {
+    	color: #FFFFFF;
+    }
+}
+
+#frontpageCarousel .carousel-wrapper {
+	padding: 15px;
+}
+
+#contentCarousel .carousel-wrapper {
+	padding: 15px 15px 15px 0;
+}
+
+// Slider navigation at the bottom of the frontpage slider
+.slider-navi {
+	height: 30px;
+	&:before, &:after {
+		conten: " ";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+#frontpageCarousel .slider-navi {
+	background: $color4;
+	border-top: 1px solid lighten($color3, 10%);
+}
+
+// removing the background for the carousel controls
+.carousel-control {
+	#frontpageCarousel & {
+			width: 20px;
+	}
+	&.left, &.right {
+		background-image: none;
+	}
+}
+
+
+
+
+//===========================================================
+// BEGIN styling the left and right navigation
+
+.glyphicon-chevron-left:before,
+.glyphicon-chevron-right:before {
+	content: none !important;
+}
+
+.carousel-control .glyphicon-chevron-left, 
+.carousel-control .glyphicon-chevron-right, 
+.carousel-control .icon-prev, 
+.carousel-control .icon-next {
+	width: 16px;
+	height: 16px;
+	top: 98%;
+		@include MQ(S) {
+		top: 93%;
+	}
+	#contentCarousel & {
+		margin-top: -22px;
+	}
+	@media only screen and (max-width: 600px) {
+		top: 90%;
+	}
+}	
+
+#frontpageCarousel .carousel-control .icon-prev, 
+#frontpageCarousel .carousel-control .glyphicon-chevron-left {
+	left: 100%;
+}
+
+#frontpageCarousel .carousel-control .icon-next, 
+#frontpageCarousel .carousel-control .glyphicon-chevron-right {
+	// right: 100%;
+	right: 50%;
+}
+
+#contentCarousel .carousel-control {
+	@media only screen and (max-width: 768px) {
+		top: 60%;
+	}
+}
+
+
+
+.glyphicon-chevron-left {
+	background: url('../img/slider-icons.png') no-repeat 0px -32px;
+	left: 5px;
+	&:hover, &:focus {
+		// background: url('../img/slider-icons.png') no-repeat -16px -16px;
+		background-position: -16px -32px;
+	}
+}
+
+.glyphicon-chevron-right {
+	background: url('../img/slider-icons.png') no-repeat 0px -16px;
+	right: 5px;
+	&:hover, &:focus {
+		background-position: -16px -16px;
+	}
+}
+// END styling the left and right navigation
+//–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+
+
+
+//===========================================================
+// BEGIN styling the carousel indicators
+
+.carousel-indicators {
+	z-index: 9 !important;
+}
+
+#frontpageCarousel .carousel-indicators {
+	margin-bottom: 2px;
+	text-align: right;
+	left: 37%;
+	@media only screen and (max-width: 991px) {
+		text-align: right;
+		left: 67%;
+		top: 93%;
+	}
+	@media only screen and (max-width: 600px) {
+		left: 65%;
+		top: 90%;
+	}
+}
+
+#contentCarousel {
+	@media only screen and (min-width: 551px) and (max-width: 992px) {
+		width: 441px;
+		.carousel-indicators {
+			bottom: 0;
+		}
+	}
+}
+
+.carousel-indicators {
+		li {
+		border: 0;
+		border-radius: 0;
+		width: 16px;
+		height: 16px;
+		margin: 0 10px 0 0;
+		padding: 0;
+		background: url('../img/slider-icons.png') no-repeat 0px 0px;
+		&.active {
+			background-position: -16px 0;
+			width: 16px;
+			height: 16px;
+			margin: 0 10px 0 0;
+			padding: 0;
+		}
+	}
+}
+
+// END carousel indicators
+//–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+
+
+
+//===========================================================
+// BEGIN Carousel content
+
+.carousel-caption {
+	h1 {
+		font-size: 30px;
+		font-size: 3rem;
+	}
+}
+
+.btn-danger {
+	border: 1px solid #900;
+	@include background-image(linear-gradient(#c50000, #930000));
+	&:active, &.active,
+	&:hover, &:focus {
+		background-color: darken(#930000, 2%);
+	}
+}
+
+.btn-lg, 
+.btn-group-lg > .btn {
+	font-size: 12px;
+	font-size: 1.2rem;
+	line-height: 20px;
+	padding: 3px 20px;
+	border-radius: 10px;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
+//===========================================================
+// NEWS
+//===========================================================
+
+// Hide date for news items
+
+.news-list-date {
+	display: none;
+}
+
+a.more {
+	// text-transform: capitalize;
+}
+
 //===========================================================
 // Mail Form
 //===========================================================
@@ -600,6 +951,8 @@ height: auto;
 
 .csc-mailform li input[type="text"] {
 	height: 32px;
+	padding-left: 10px;
+	padding-left: 1rem;
 	height: 3.2rem;
 }
 
@@ -742,254 +1095,6 @@ li.csc-form-element-textarea {
 }
 
 //===========================================================
-// Breadcrumb
-
-.breadcrumb {
-	background-color: transparent;
-	padding: 0;
-	margin: 16px 0;
-	font-size: 12px;
-	font-size: 1.2rem;
-	line-height: 15px;
-	z-index: 10;
-
-a {
-			color: $color2;
-			&:after {
-				// content: " / ";
-			}
-			&:hover {
-				text-decoration: underline;
-			}
-		}
-
-
-	span {
-		background: none !important;
-		padding: 0 !important;
-		a {
-			color: $color2;
-			&:after {
-				content: " / ";
-			}
-			&:hover {
-				text-decoration: underline;
-			}
-		}
-		&.active {
-			a {
-				text-decoration: underline;
-				&:after {
-				content: " ";
-				}
-			}
-		}
-	}
-}
-
-//–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-// END BREADCRUMB
-
-
-
-
-//===========================================================
-// Slider Frontpage
-
-@media only screen and (min-width: 992px) {
-	.carousel-caption {
-	    left: 540px; //50%;
-	    padding-bottom: 30px;
-	    // right: 10%;
-	    width: 330px; // 50%;
-	}
-	.carousel-caption {
-	    bottom: 20px;
-	    color: #FFFFFF;
-	    padding-top: 20px;
-	    position: absolute;
-	    text-align: left;
-	    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
-	    z-index: 10;
-	}
-	
-	.carousel-indicators {
-		margin-left: 0;
-		left: 60%;
-		bottom: 0;
-	}
-}
-
-@media only screen and (max-width: 600px) {
-	.carousel-caption {
-		top: 0;
-	}
-}
-
-.carousel {
-	border: 1px solid $color3;
-}
-
-.carousel-wrapper {
-	padding: 15px;
-}
-
-// Slider navigation at the bottom of the frontpage slider
-.slider-navi {
-	background: $color4;
-	border-top: 1px solid lighten($color3, 10%);
-	height: 30px;
-	&:before, &:after {
-		conten: " ";
-		display: table;
-	}
-	&:after {
-		clear: both;
-	}
-}
-
-// removing the background for the carousel controls
-.carousel-control {
-	&.left, &.right {
-		background-image: none;
-	}
-	width: 20px;
-}
-
-
-
-
-//===========================================================
-// BEGIN styling the left and right navigation
-
-.glyphicon-chevron-left:before,
-.glyphicon-chevron-right:before {
-	content: none !important;
-}
-
-.carousel-control .glyphicon-chevron-left, 
-.carousel-control .glyphicon-chevron-right, 
-.carousel-control .icon-prev, 
-.carousel-control .icon-next {
-	width: 16px;
-	height: 16px;
-	top: 98%;
-		@include MQ(S) {
-		top: 93%;
-	}
-	@media only screen and (max-width: 600px) {
-		top: 90%;
-	}
-}
-
-.carousel-control .icon-prev, 
-.carousel-control .glyphicon-chevron-left {
-	left: 100%;
-}
-
-.carousel-control .icon-next, 
-.carousel-control .glyphicon-chevron-right {
-	// right: 100%;
-	right: 50%;
-}
-
-.glyphicon-chevron-left {
-	background: url('../img/slider-icons.png') no-repeat 0px -32px;
-	left: 5px;
-	&:hover, &:focus {
-		// background: url('../img/slider-icons.png') no-repeat -16px -16px;
-		background-position: -16px -32px;
-	}
-}
-
-.glyphicon-chevron-right {
-	background: url('../img/slider-icons.png') no-repeat 0px -16px;
-	right: 5px;
-	&:hover, &:focus {
-		background-position: -16px -16px;
-	}
-}
-// END styling the left and right navigation
-//–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-
-
-
-
-//===========================================================
-// BEGIN styling the carousel indicators
-
-.carousel-indicators {
-	margin-bottom: 2px;
-	text-align: right;
-	left: 37%;
-	@media only screen and (max-width: 991px) {
-		text-align: right;
-		left: 67%;
-		top: 93%;
-	}
-	@media only screen and (max-width: 600px) {
-		left: 65%;
-		top: 90%;
-	}
-	li {
-		border: 0;
-		border-radius: 0;
-		width: 16px;
-		height: 16px;
-		margin: 0 10px 0 0;
-		padding: 0;
-		background: url('../img/slider-icons.png') no-repeat 0px 0px;
-		&.active {
-			background-position: -16px 0;
-			width: 16px;
-			height: 16px;
-			margin: 0 10px 0 0;
-			padding: 0;
-		}
-
-	}
-}
-
-// END carousel indicators
-//–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-
-
-
-
-//===========================================================
-// BEGIN Carousel content
-
-.carousel-caption {
-	h1 {
-		font-size: 30px;
-		font-size: 3rem;
-	}
-}
-
-.btn-danger {
-	border: 1px solid #900;
-	@include background-image(linear-gradient(#c50000, #930000));
-	&:active, &.active,
-	&:hover, &:focus {
-		background-color: darken(#930000, 2%);
-	}
-}
-
-.btn-lg, 
-.btn-group-lg > .btn {
-	font-size: 12px;
-	font-size: 1.2rem;
-	line-height: 20px;
-	padding: 3px 20px;
-	border-radius: 10px;
-	text-transform: uppercase;
-	font-weight: 300;
-}
-
-
-
-
-//===========================================================
 // Footer
 //===========================================================
 
@@ -1014,11 +1119,21 @@ a {
   			line-height: auto;
   			padding-top: 0;
   			text-transform: none;
+  			padding-left: 20px !important;
+  			padding-right: 20px !important;
   			&:hover, &:focus {
   				background-color: transparent;
   				color: $color2;
   				text-decoration: underline;
   			}
+  		}
+  		@media only screen and (min-width: 992px) {
+  			li:first-child a {
+  				padding-left: 0 !important;
+  			}
+  		}
+  		li:last-child a {
+  			padding-right: 0 !important;
   		}
   	}
   }
