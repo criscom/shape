@@ -71,18 +71,29 @@ iframe {
 //===========================================================
 
 h2,
+.bodytext,
 ul li,
 .search-result-url {
 	a {
 	color: $color2;
 	&:hover, &:focus {
 		color: $color2;
+		}
 	}
+}
+
+.bodytext,
+.search-result-url {
+	a {
+		text-decoration: underline !important;
+		&:hover, &:focus {
+			text-decoration: none !important;
+		}
 	}
 }
 
 .hit {
-	color: $color1;
+	// color: $color1 !important;
 }
 
 /* =========================================================== */
