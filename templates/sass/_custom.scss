@@ -142,6 +142,12 @@ ul li,
 */
 width: 100%;
 height: auto;
+@media only screen and (min-width: 321px) and (max-width: 568px) {
+	width: 300px;
+	}
+@media only screen and (max-width: 320px) {
+	width: 180px;
+}
 }
 
 
@@ -268,7 +274,7 @@ height: auto;
 //===========================================================
 // 769px specific BEGIN
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
 	.navbar-static-top {
 		margin-bottom: 0 !important;
 	}
@@ -290,7 +296,7 @@ height: auto;
 		}
 		li {
 			border-left: 1px solid $color2;
-			height: 41px;
+			height: 40px;
 			&:last-child {
 				border-right: 1px solid $color2;
 			}
@@ -769,8 +775,41 @@ a {
 	}
 }
 
+// BEGIN
+@media only screen and (max-width: 568px) {
+	#frontpageCarousel .item {
+		min-height: 220px;
+		> img {
+			display: none;
+		}
+	}
+	#frontpageCarousel {
+		.carousel-caption {
+			min-height: 320px !important;
+			padding-top: 0;
+			left: 0;
+			right: 0;
+		}
+		.carousel-indicators {
+			top: 92% !important;
+			left: 62% !important;
+		}
+		.carousel-control.left,
+		.carousel-control.right {
+			top: 21%;
+		}
+	}
+}
+// END
 
-
+@media only screen and (max-width: 320px) {
+	#frontpageCarousel {
+		.carousel-caption h1 {
+			font-size: 20px;
+			font-size: 2rem;
+		}
+	}
+}
 
 //===========================================================
 // BEGIN styling the left and right navigation
@@ -915,6 +954,14 @@ a {
 		.carousel-control .icon-prev, 
 		.carousel-control .icon-next {
 		top: 94%;
+		}
+	}
+		@media only screen and (max-width: 320px) {
+		.carousel-control .glyphicon-chevron-left, 
+		.carousel-control .glyphicon-chevron-right, 
+		.carousel-control .icon-prev, 
+		.carousel-control .icon-next {
+		top: 90.5%;
 		}
 	}
 }
@@ -1164,6 +1211,14 @@ li.csc-form-element-textarea {
 		@include background-image(linear-gradient(darken(#930000, 10%), darken(#930000, 2%)));
 		// background-color: darken(#930000, 2%);
 	}
+}
+
+//===========================================================
+// Kontaktieren Sie uns Button
+
+.contact-button {
+	margin-top: 36px;
+	margin-bottom: 30px;
 }
 
 //===========================================================
