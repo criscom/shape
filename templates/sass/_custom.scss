@@ -79,6 +79,9 @@ ul li,
 	&:hover, &:focus {
 		color: $color2;
 		}
+	&:visited {
+		color: ligthen($color2, 5%);
+	}
 	}
 }
 
@@ -670,7 +673,7 @@ a {
 // Slider Frontpage
 
 @media only screen and (min-width: 992px) {
-	.carousel-caption {
+	#frontpageCarousel .carousel-caption {
 	    left: 520px; // 540px; //50%;
 	    padding-top: 20px; // 63px; // 20px;
 	    padding-bottom: 30px;
@@ -703,7 +706,7 @@ a {
 }
 
 @media only screen and (max-width: 600px) {
-	.carousel-caption {
+	#frontpageCarousel .carousel-caption {
 		top: 0;
 	}
 }
@@ -812,8 +815,6 @@ a {
 	}
 }
 
-
-
 .glyphicon-chevron-left {
 	background: url('../img/slider-icons.png') no-repeat 0px -32px;
 	left: 5px;
@@ -833,6 +834,50 @@ a {
 // END styling the left and right navigation
 //–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
+
+//===========================================================
+// ProductCarousel
+
+#productCarousel .carousel-caption {
+	left: 0;
+	right: 0;
+	bottom: 0;
+	text-align: left;
+	padding-top: 6px;
+	padding-top: 0.6rem;
+	padding-right: 10px;
+	padding-right: 1rem;
+	padding-bottom: 0; // 10px !important;
+	padding-bottom: 0; // 1rem !important;
+	padding-left: 10px;
+	padding-left: 1rem;
+	h1 {
+		font-size: 18px;
+		font-size: 1.8rem;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	#productCarousel {
+		.carousel-wrapper {
+		width: 100%;
+			.carousel-inner img {
+				display: table;
+				margin: 0 auto;
+			}
+			.carousel-caption {
+				display: table;
+				margin: 0 auto;
+				max-width: 441px;
+			}
+		}
+	}
+}
+
+#productCarousel .carousel-indicators {
+	margin-left: -29%;
+	bottom: -8px;
+}
 
 
 
@@ -855,6 +900,22 @@ a {
 	@media only screen and (max-width: 600px) {
 		left: 65%;
 		top: 90%;
+	}
+}
+
+#productCarousel {
+	@media only screen and (min-width: 992px) {
+		.carousel-control .glyphicon-chevron-left {
+			margin-left: 0;
+		}
+	}
+	@media only screen and (max-width: 767px) {
+		.carousel-control .glyphicon-chevron-left, 
+		.carousel-control .glyphicon-chevron-right, 
+		.carousel-control .icon-prev, 
+		.carousel-control .icon-next {
+		top: 94%;
+		}
 	}
 }
 
