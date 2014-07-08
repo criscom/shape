@@ -1,0 +1,207 @@
+lib.mainNav = HMENU
+lib.mainNav {
+  entryLevel = 0
+  1 = TMENU
+  1 {
+    expAll = 1
+    
+    NO.allWrap = <li>|</li>
+    NO.ATagTitle.field = abstract // description // title
+    
+    ACT = 1
+    ACT.wrapItemAndSub = <li class="active">|</li>
+    ACT.ATagTitle.field = abstract // description // title
+    
+    IFSUB = 1
+    IFSUB.before = <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+    IFSUB.after = <b class="caret"></b></a>
+    IFSUB.doNotLinkIt = 1
+    IFSUB.wrapItemAndSub = <li class="dropdown">|</li>
+    IFSUB.ATagTitle.field = abstract // description // title
+    
+    ACTIFSUB = 1
+    ACTIFSUB.before = <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+    ACTIFSUB.after = <b class="caret"></b></a>
+    ACTIFSUB.doNotLinkIt = 1
+    ACTIFSUB.wrapItemAndSub = <li class="dropdown active">|</li>
+    ACTIFSUB.ATagTitle.field = abstract // description // title
+    
+    wrap = <ul class="nav navbar-nav">|</ul>
+  }
+  
+  2 = TMENU
+  2 {
+    expAll = 1
+    
+    ACT = 1
+    ACT.wrapItemAndSub = <li class="active">|</li>
+    ACT.ATagTitle.field = abstract // description // title
+    
+    ACTIFSUB = 1
+    ACTIFSUB.wrapItemAndSub = |
+    ACTIFSUB.before = <li class="divider"></li><li class="nav-header">
+    ACTIFSUB.after = </li>
+    ACTIFSUB.doNotLinkIt = 1
+    ACTIFSUB.ATagTitle.field = abstract // description // title
+    
+    NO.allWrap = <li>|</li>
+    NO.ATagTitle.field = abstract // description // title
+    
+    IFSUB = 1
+    IFSUB.before = <li class="divider"></li><li class="nav-header">
+    IFSUB.after = </li>
+    IFSUB.doNotLinkIt = 1
+    IFSUB.ATagTitle.field = abstract // description // title
+    
+    SPC = 1
+    SPC.allWrap = <li class="divider"></li><li class="nav-header">|</li>
+    
+    wrap = <ul class="dropdown-menu">|</ul>
+  }
+  
+  3 = TMENU
+  3 {
+    NO.allWrap = <li>|</li>
+    NO.ATagTitle.field = abstract // description // title
+    
+    ACT = 1
+    ACT.wrapItemAndSub = <li class="active">|</li>
+    ACT.ATagTitle.field = abstract // description // title
+  }
+}
+
+lib.footerNav = HMENU
+lib.footerNav {
+  special = directory
+  special.value = 37
+  1 = TMENU
+  1 {
+    NO = 1
+    NO.allWrap = <li>|</li>
+    
+  }
+  wrap = <ul class="nav navbar-nav">|</ul>
+}
+
+lib.breadcrumb = HMENU
+lib.breadcrumb {
+  special = rootline
+  special.range = 1|-1
+
+  includeNotInMenu = 1
+  wrap = <div class="breadcrumb">|</div>
+  
+  1 = TMENU
+  1 {
+    noBlur = 1
+ 
+    NO {
+      allWrap = |*| | <span> &raquo; </span> |*| |
+    }
+ 
+  }
+}
+
+
+
+page = PAGE
+
+page.10 = FLUIDTEMPLATE
+page.10 {
+  
+
+  file.cObject = CASE
+  file.cObject {
+
+    key.data = levelfield:-1, backend_layout_next_level, slide
+    key.override.field = backend_layout
+    default = TEXT
+    default.value = private/templates/layouts/default.html
+
+  }  
+  
+  
+  partialRootPath = private/templates/partials/
+  layoutRootPath =  private/template/layouts/
+  variables{
+    layout = TEXT
+    layout = TEXT
+    layout.data = levelfield:-2,backend_layout_next_level,slide
+    layout.override.field = backend_layout
+    
+    # default layout
+    content < styles.content.get    
+    contentImage < styles.content.get
+    contentImage.select.where = colPos = 1
+    contentBelowImage < styles.content.get
+    contentBelowImage.select.where = colPos = 2
+    contentMain < styles.content.get
+    contentMain.select.where = colPos = 3
+    
+
+    contentLeft < styles.content.get    
+    contentLeft.select.where = colPos = 1
+    contentRight < styles.content.get
+    contentRight.select.where = colPos = 2
+    contentTop < styles.content.get
+    contentTop.select.where = colPos = 3
+    
+  }
+}
+
+
+
+page.headerData.5 = TEXT
+page.headerData.5.value (
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/fileadmin/assets/ico/favicon.ico">
+<!--[if IE 8]><html class="lt-ie9"><![endif]-->
+<!--[if IE 9]><html class="lt-ie10"><![endif]-->
+<!--[if IE 10]><html class="ie1"><![endif]-->
+<!-- Bootstrap core CSS -->
+<link href="/fileadmin/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap theme -->
+<link href="/fileadmin/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+
+<!-- Custom styles for this template -->
+<link href="/fileadmin/css/navbar-static-top.css" rel="stylesheet">
+<link href="/fileadmin/css/styles.css" rel="stylesheet">
+
+    <!-- Bootstrap core JavaScript -->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="/fileadmin/dist/js/bootstrap.min.js"></script>
+    <script src="/fileadmin/assets/js/docs.min.js"></script>
+    <script src="/fileadmin/assets/js/transition.js"></script>
+    
+<!-- In-Field Labels for mail form -->
+    <script src="/fileadmin/assets/js/jquery.infieldlabel.js"></script>
+    <script>$(function(){ $("label").InFieldLabels(); });</script>
+
+<!-- Just for debugging purposes. Don't actually copy this line! -->
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="/fileadmin/assets/js/html5shiv.js"></script>
+  <script src="/fileadmin/assets/js/respond.js"></script>
+<![endif]-->
+)
+
+
+page.bodyTagCObject = CASE
+page.bodyTagCObject {
+  stdWrap.wrap = <body class="|" role="document">
+  key.data = levelfield:-1, backend_layout_next_level, slide
+  key.override.field = backend_layout
+  default = TEXT
+  default.value = layoutImageBelowimageRight
+
+  2 = TEXT
+  2.value = layoutLeftAndRight
+} 
+
+
+
+
+  
