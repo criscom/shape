@@ -376,16 +376,17 @@ height: auto;
 			}
 		}
 	}
-	
 	.navbar-nav .open {
+			background-color: $color2 !important;
+			> a {
+				background-color: $color2 !important;
+				color: white !important;
+			}
+		ul.dropdown-menu li a {
 			background-color: $color2;
-			color: white !important;
-	
-		li a {
-			background-color: $color2;
-			color: white !important;
+			color: white;
 		}
-		li.active a {
+		ul.dropdown-menu li.active a {
 			background-color: $color3;
 		}
 	}
@@ -445,12 +446,16 @@ height: auto;
 	.navbar-static-top .navbar-nav > .active > a, 
 	.navbar-static-top .navbar-nav > .active > a:hover, 
 	.navbar-static-top .navbar-nav > .active > a:focus {
-		background-color: $color2 !important;
+		// background-color: $color2 !important;
 		height: 40px;
 		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#353535', endColorstr='#353535', GradientType=0);
 	}
 
-	.dropdown-menu > .active > a,
+	.dropdown-menu > .active > a {
+				filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#C2C2C2', endColorstr='#C2C2C2', GradientType=0);
+				padding-top: 8px;
+				padding-bottom: 16px !important;
+	}
 	.dropdown-menu > li > a {
 		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#353535', endColorstr='#353535', GradientType=0);
 	}
@@ -490,11 +495,17 @@ height: auto;
 	
 	.navbar-nav .open {
 			background: $color2 !important;
-			color: white !important;
-	
-		a {
+			> a {
 			background-color: $color2 !important;
 			color: white !important;
+			}
+	
+		ul.dropdown-menu li a {
+			background-color: $color2;
+			color: white;
+		}
+		ul.dropdown-menu li.active a {
+			background-color: $color3;
 		}
 	}
 	
@@ -504,8 +515,21 @@ height: auto;
 	}
 } // lt-ie9 END
 
-.lt-ie10 .navbar-nav li.active a {
+.lt-ie10 .navbar-nav>li.active>a {
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#353535', endColorstr='#353535', GradientType=0);
+}
+
+.lt-ie10 {
+		.dropdown-menu > .active > a {
+				filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#C2C2C2', endColorstr='#C2C2C2', GradientType=0);
+				padding-top: 8px;
+				padding-bottom: 8px !important;
+		}
+		.dropdown-menu > li:hover > a,
+		.dropdown-menu > li:focus > a {
+				filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#353535', endColorstr='#353535', GradientType=0);
+
+		}
 }
 
 // END IE 8 STYLES FOR NAVBAR
@@ -566,6 +590,13 @@ height: auto;
 		}
 		}
 	}
+}
+
+.dropdown-menu > .active,
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover, 
+.dropdown-menu > .active > a:focus {
+	background-color: $color3 !important;
 }
 
 //–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -650,13 +681,6 @@ height: auto;
 		}
 		}
 	}
-}
-
-.dropdown-menu > .active,
-.dropdown-menu > .active > a,
-.dropdown-menu > .active > a:hover, 
-.dropdown-menu > .active > a:focus {
-	background-color: $color3;
 }
 
 
