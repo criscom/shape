@@ -73,7 +73,8 @@ iframe {
 h2,
 .bodytext,
 ul li,
-.search-result-url {
+.search-result-url,
+.kesearch_pagebrowser {
 	a {
 	color: $color2;
 	&:hover, &:focus {
@@ -123,7 +124,7 @@ ul li,
 .logobar {
 	float: left;
 	margin: 0;
-	@include MQ(S) {
+	@media only screen and (max-width: 767px) {
 		width: 210px;
 	}
 	@media only screen and (max-width: 419px) {
@@ -318,6 +319,10 @@ height: auto;
 			> a {
 				padding-left: 16px;
 				padding-right: 16px;
+				@media only screen and (min-width: 768px) and (max-width: 991px) {
+					padding-left: 15px;
+					padding-right: 15px;
+				}
 				@media only screen and (min-width: 992px) {
 				padding-right: 31px !important;
 				padding-left: 32px !important;
@@ -527,7 +532,7 @@ height: auto;
 // Navbar MOBILE
 //===========================================================
 /* Mobile */
-	@include MQ(S) { 
+	@media only screen and (max-width: 767px) { 
 	.navbar,
 	.navbar-default .navbar-nav > .active > a {
 		background-color: $color3 !important;
@@ -727,6 +732,12 @@ a {
 
 //===========================================================
 // Slider Frontpage
+
+
+// change slider speed
+
+#frontpageCarousel .carousel-inner > .item {
+}
 
 @media only screen and (min-width: 992px) {
 	#frontpageCarousel .carousel-caption {
@@ -1344,6 +1355,29 @@ body#pid-10 #content {
 		min-height: 580px;
 		height: auto !important;
 		height: 580px;
+	}
+}
+
+.tx-kesearch-pi1 .next,
+.tx-kesearch-pi1 .prev {
+	width: 16px !important;
+	height: 16px !important;
+	margin: 0 0 -3px !important;
+}
+
+.tx-kesearch-pi1 .next {
+	background: url("../img/slider-icons.png") no-repeat scroll 0 -16px rgba(0, 0, 0, 0);
+		&:hover, &:focus {
+		background-position: -16px -16px;
+		text-indent: -9999px;
+	}
+}
+
+.tx-kesearch-pi1 .prev {
+	background: url("../img/slider-icons.png") no-repeat scroll 0 -32px rgba(0, 0, 0, 0);
+	&:hover, &:focus {
+		background-position: -16px -32px;
+		text-indent: -9999px;
 	}
 }
 
