@@ -142,11 +142,11 @@ ul li,
 */
 width: 100%;
 height: auto;
-@media only screen and (min-width: 321px) and (max-width: 568px) {
-	width: 300px;
+@media only screen and (min-width: 321px) and (max-width: 767px) {
+	width: 350px;
 	}
 @media only screen and (max-width: 320px) {
-	width: 180px;
+	width: 250px;
 }
 }
 
@@ -261,29 +261,14 @@ height: auto;
 // NAVIGATION
 //===========================================================
 
-/* Search form doesn't push navbar down */
-@media only screen and (min-width: 768px) {
-.navbar .container:before,
-.navbar .container:after,
-.nav:before, 
-.nav:after, 
-.navbar:before, 
-.navbar:after, 
-.navbar-header:before, 
-.navbar-header:after, 
-.navbar-collapse:before, 
-.navbar-collapse:after {
-	/*display: inline !important;*/
-	// content: none;
-	}
-}		
 
 /* Background Image for navbar */
 
 //===========================================================
 // 769px specific BEGIN
 
-@media only screen and (min-width: 769px) {
+
+@media only screen and (min-width: 768px) {
 	.navbar-static-top {
 		margin-bottom: 0 !important;
 	}
@@ -377,14 +362,17 @@ height: auto;
 		}
 	}
 	.navbar-nav .open {
-			background-color: $color2 !important;
+			background-color: lighten($color2, 10%) !important;
 			> a {
-				background-color: $color2 !important;
+				background-color: lighten($color2, 10%) !important;
 				color: white !important;
 			}
-		ul.dropdown-menu li a {
-			background-color: $color2;
+		ul.dropdown-menu {
+			background-color: lighten($color2, 10%);
+			li a {
+			background-color: lighten($color2, 10%);
 			color: white;
+			}
 		}
 		ul.dropdown-menu li.active a {
 			background-color: $color3;
@@ -494,14 +482,14 @@ height: auto;
 	}
 	
 	.navbar-nav .open {
-			background: $color2 !important;
+			background: lighten($color2, 10%) !important;
 			> a {
-			background-color: $color2 !important;
+			background-color: lighten($color2, 10%) !important;
 			color: white !important;
 			}
 	
 		ul.dropdown-menu li a {
-			background-color: $color2;
+			background-color: lighten($color2, 10%);
 			color: white;
 		}
 		ul.dropdown-menu li.active a {
@@ -538,7 +526,7 @@ height: auto;
 //===========================================================
 // Navbar MOBILE
 //===========================================================
-
+/* Mobile */
 	@include MQ(S) { 
 	.navbar,
 	.navbar-default .navbar-nav > .active > a {
@@ -597,6 +585,7 @@ height: auto;
 .dropdown-menu > .active > a:hover, 
 .dropdown-menu > .active > a:focus {
 	background-color: $color3 !important;
+	background-image: none !important;
 }
 
 //–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -1194,8 +1183,9 @@ a.more {
 		margin-top: -22px;
 		margin-left: -4px;
 		line-height: 1;
-		border: 1px solid $color1;
-		color: transparent;
+		border: 2px solid $color1;
+		// color: transparent;
+		@include box-shadow(0);
 	}
 }
 
@@ -1400,6 +1390,15 @@ body#pid-10 #content {
   		}
   	}
   }
+ }
+
+ .footer-content .row {
+ 	li a {
+ 		@media only screen and (max-width: 991px) {
+  			padding-left: 10px !important;
+  			padding-right: 10px !important;
+  		}
+ 	}
  }
 
  .footer-content {
