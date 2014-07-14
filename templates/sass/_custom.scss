@@ -1380,7 +1380,22 @@ body#pid-10 #content {
 		text-indent: -9999px;
 	}
 }
+@media only screen and (max-width: 480px) {
+body#pid-10 h2,
+body#pid-10 .search-result-url {
+  width: 270px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+	}
+}
 
+@media only screen and (max-width: 481px) {
+body#pid-10 .content-wrapper input#kesearch_submit {
+  	left: 150px !important;
+  	top: 40px;
+  }
+}
 //===========================================================
 // Footer
 //===========================================================
