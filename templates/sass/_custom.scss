@@ -1781,10 +1781,14 @@ body#pid-10 .content-wrapper input#kesearch_submit {
  	}
  }
 
- // box shadow for ie8
-
- .footer-content {
-
+// footer fix for Internet explorer 8 for the front page
+.lt-ie9 body#pid-1 .content-container{
+	 // min-height: 644px; 
+  //  height:auto !important; 
+  //  height: 644px; 
+}
+ .lt-ie9 body#pid-1 .footer-content {
+ 	height: 485px;
  }
 
  .lt-ie9 #footer .footer-content .row li a {
