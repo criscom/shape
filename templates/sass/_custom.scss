@@ -20,23 +20,18 @@
 }*/
 
 
-
+// @import url("default.css");
 
 html {
-// Sticky footer styles: 2 lines
-	// position: relative;
- //  min-height: 100%;
 }
 
 body {
 	font-family: Arial, Helvetica, sans-serif;
 	position: relative;
 	min-height: 0;
-	background-image: image-url('stripes.png');
+	// background-image: image-url('stripes.png');
+	background-image: image-url('bg-pattern.gif');
 	background-repeat: repeat;
-// Sticky footer styles
-// Margin bottom by footer height
-  // margin-bottom: 377px;
 }
 
 //===========================================================
@@ -148,7 +143,10 @@ height: auto;
 	}
 @media only screen and (max-width: 320px) {
 	width: 250px;
-}
+	}
+	@media only screen and (max-width: 370px) {
+		width: 240px;
+	}
 }
 
 
@@ -602,7 +600,6 @@ height: auto;
 //===========================================================
 // CONTENT GENERAL
 //===========================================================
-
 .content-container {
 	@media only screen and (min-width: 992px) {
   	width: 940px;
@@ -1339,12 +1336,319 @@ li.csc-form-element-textarea {
 }
 
 //===========================================================
+// Kontaktformular powermail Code from default.css Dominik
+
+
+ /**** New Contact Form "Powermail" ****/
+
+.tx-powermail {
+	width: auto !important;
+}
+
+.powermail_fieldset {
+	background: none !important;
+	border: 0px !important;
+}
+
+.powermail_fieldset_1 .powermail_legend {
+	display: none !important;
+}
+
+.powermail_label {
+	font-weight: 300;
+	color: #000;
+	float: left;
+	width: 13em;
+	margin-right: 1em;
+	vertical-align: baseline;
+}
+
+.powermail_form_1 h3 {
+	display: none;
+}
+
+.powermail_select {
+	width: 100% !important;
+	height: 32px;
+	height: 3.2rem;
+	padding-top: 5px !important;
+	background-color: transparent;
+	background-image: url('../img/stripes.png?1401811042');
+	background-repeat: repeat;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.powermail_check_legend,
+.powermail_radio_legend {
+	display: none;
+}
+
+#powermail_fieldwrap_1 {
+	border-bottom: 1px solid #c2c2c2;
+	padding-bottom: 6px;
+	margin-bottom: 16px;
+}
+
+.powermail_check_inner label,
+.powermail_radio_inner label {
+	font-weight: normal;
+}
+
+.powermail_check_inner,
+.powermail_radio_inner {
+	float: left;
+	margin-right: 10px;
+}
+
+.powermail_fieldwrap_input .powermail_label,
+.powermail_fieldwrap_textarea .powermail_label {
+	position: absolute;
+	top: 6px;
+	left: 10px;
+	cursor: text;
+}
+
+.powermail_fieldwrap_input,
+.powermail_fieldwrap_textarea {
+	position: relative;
+	margin: 2% 0;
+	width: 50%;
+	float: left;
+	@media all and (max-width:568px) {
+		width: 100%;
+	}
+}
+
+.powermail_fieldwrap_textarea {
+	width: 100%;
+}
+
+.powermail_fieldwrap_input input {
+	height: 32px;
+	padding-left: 10px;
+	padding-left: 1rem;
+	height: 3.2rem;
+	-webkit-box-shadow: inset 0px 1px 2px 0 #c2c2c2;
+	-moz-box-shadow: inset 0px 1px 2px 0 #c2c2c2;
+	box-shadow: inset 0px 1px 2px 0 #c2c2c2;
+	background-image: url('../img/stripes.png?1401811042');
+	background-repeat: repeat;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
+	border: none !important;
+	width: 99%;
+}
+
+#powermail_fieldwrap_11, #powermail_fieldwrap_12 {
+	width: 100%;
+}
+
+.mandatory {
+	color: #990000;
+}
+
+.powermail_submit {
+	padding: 4px 24px;
+	line-height: 1;
+	color: white;
+	background-color: #990000;
+	-webkit-border-radius: 23px;
+	-moz-border-radius: 23px;
+	-ms-border-radius: 23px;
+	-o-border-radius: 23px;
+	border-radius: 23px;
+	border: 1px solid #660000;
+	text-transform: uppercase;
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+	border: 1px solid #900;
+	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #c50000), color-stop(100%, #930000));
+	background-image: -webkit-linear-gradient(#c50000, #930000);
+	background-image: -moz-linear-gradient(#c50000, #930000);
+	background-image: -o-linear-gradient(#c50000, #930000);
+	background-image: linear-gradient(#c50000, #930000);
+	float: right;
+}
+
+.powermail_textarea {
+	padding: 1rem 0 0 1rem;
+	width: 99%;
+	-webkit-box-shadow: inset 0px 1px 2px 0 #c2c2c2;
+	-moz-box-shadow: inset 0px 1px 2px 0 #c2c2c2;
+	box-shadow: inset 0px 1px 2px 0 #c2c2c2;
+	background-image: url('../img/stripes.png?1401811042');
+	background-repeat: repeat;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
+	border: none !important;
+}
+
+.formError {
+	opacity: 0.87;
+	position: absolute;
+	top: 0px;
+	left: 50% !important;
+	z-index: 990;
+	margin-left: -75px;
+	margin-top: -35px;
+}
+
+.formError .formErrorContent {
+	width: 100%;
+	position:relative;
+	color: #fff;
+	width: 150px;
+	font-size: 11px;
+	border: 0px solid #ddd;
+	padding: 4px 10px 4px 10px;
+	background: #900;
+}
+
+.formError .formErrorArrow {
+	width: 15px;
+	margin: -2px 0 0 13px;
+	position: relative;
+}
+body[dir='rtl'] .formError .formErrorArrow,
+body.rtl .formError .formErrorArrow {
+	margin: -2px 13px 0 0;
+}
+.formError .formErrorArrowBottom {
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	margin: 0px 0 0 12px;
+	top:2px;
+}
+.formError .formErrorArrow div {
+	border-left: 0px solid #ddd;
+	border-right: 0px solid #ddd;
+	font-size: 0px;
+	height: 1px;
+	margin: 0 auto;
+	line-height: 0;
+	font-size: 0;
+	display: block;
+	background: #900; /* Old browsers */
+}
+.formError .formErrorArrowBottom div {
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+}
+.greenPopup .formErrorArrow div {
+	background: #900;
+}
+.blackPopup .formErrorArrow div {
+	background: #900;
+	color: #FFF;
+}
+.formError .formErrorArrow .line10 {
+	width: 15px;
+	border: none;
+}
+.formError .formErrorArrow .line9 {
+	width: 13px;
+	border: none;
+}
+.formError .formErrorArrow .line8 {
+	width: 11px;
+}
+.formError .formErrorArrow .line7 {
+	width: 9px;
+}
+.formError .formErrorArrow .line6 {
+	width: 7px;
+}
+.formError .formErrorArrow .line5 {
+	width: 5px;
+}
+.formError .formErrorArrow .line4 {
+	width: 3px;
+}
+.formError .formErrorArrow .line3 {
+	width: 1px;
+	border-left: 0px solid #ddd;
+	border-right: 0px solid #ddd;
+	border-bottom: 0 solid #ddd;
+}
+.formError .formErrorArrow .line2 {
+	width: 3px;
+	border: none;
+	background: #ddd;
+}
+.formError .formErrorArrow .line1 {
+	width: 1px;
+	border: none;
+	background: #ddd;
+}
+
+/**************************************/
+
+// Kontaktformular powermail Internet Explorer 8
+
+.lt-ie9 {
+	.powermail_fieldwrap_input,
+	.powermail_fieldwrap_textarea {
+	border: 1px solid $color3; 
+	}
+	.powermail_fieldwrap_6, // Vorname
+	.powermail_fieldwrap_9, // E-Mail
+	.powermail_fieldwrap_13, // Stadt
+	{
+		width: 49%;
+		margin-right: 2%;
+	}
+	.powermail_fieldwrap_8, // Nachname
+	.powermail_fieldwrap_10, // Telefon
+	.powermail_fieldwrap_14, // PLZ
+	{
+		width: 49%;
+	}
+}
+
+//–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+
+//===========================================================
 // Kontaktieren Sie uns Button
 
 .contact-button {
 	margin-top: 36px;
 	margin-bottom: 30px;
 }
+
+// remove left border when contact form becomes one column
+@media only screen and (max-width: 991px) {
+	.content-left-right-wrapper #content_right {
+		border-left: 0;
+	}
+}
+
+// give thank you page min height
+
+body#pid-50 .content-wrapper {
+	min-height: 580px;
+	.lt-ie9 & {
+		min-height: 580px;
+		height: auto !important;
+		height: 580px;
+	}
+}
+
+//–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
 
 //===========================================================
 // Suche / Search results
@@ -1402,17 +1706,19 @@ body#pid-10 .content-wrapper input#kesearch_submit {
 
 #footer {
 	.footer-image {
-		background-image: url('../img/bg-machines-transparent-footer.png');
+		// background-image: url('../img/bg-machines-transparent-footer.png');
 		background-repeat: no-repeat;
 		background-position: center 7px; //97px;
 		height: 187px; // 277px;
 	}
 	.footer-content  {
+		@include background-image(linear-gradient(top, $color3, $color4));
+		background: -ms-linear-gradient(top, $color3, $color4) !important;
   	width: 100%;
+  	box-shadow: 0px 500px 0px 500px $color4;
   	/* Set the fixed height of the footer here */
   	height: 281px;
   	border-top: 3px solid $color2;
-  	@include background-image(linear-gradient(top, $color3, $color4));
   	.row {
   		margin-top: 12px;
   		font-size: 12px;
@@ -1465,6 +1771,20 @@ body#pid-10 .content-wrapper input#kesearch_submit {
   			width: 940px;
   		}
  	}
+ }
+
+// background color for ie9 und ie 8 ==> no gradients possible for these browsers
+ .lt-ie9,
+ .lt-ie10 {
+ 	.footer-content {
+ 	background-color: $color4;
+ 	}
+ }
+
+ // box shadow for ie8
+
+ .footer-content {
+
  }
 
  .lt-ie9 #footer .footer-content .row li a {
