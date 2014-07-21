@@ -386,6 +386,21 @@ height: auto;
 		margin-top: 7px;
 		background-color: $color4 !important;
 	}
+
+	.navbar-nav>li {
+		&:hover {
+			background-color: lighten($color2, 10%) !important;
+			color: white !important;
+			}
+		a {
+			&:hover {
+			background-color: lighten($color2, 10%) !important;
+			color: white !important;
+			}
+		}
+	}
+
+
 } // 769 specific END
 
 // END 769px specific
@@ -756,6 +771,10 @@ a {
 	    	margin-top: 0;
 	    	margin-bottom: 20px;
 	    	margin-bottom: 2rem;
+	    }
+	    p {
+	    	margin-right: 8px;
+	    	margin-right: .5rem;
 	    }
 	}
 	
@@ -1709,7 +1728,8 @@ body#pid-10 .content-wrapper input#kesearch_submit {
 		// background-image: url('../img/bg-machines-transparent-footer.png');
 		background-repeat: no-repeat;
 		background-position: center 7px; //97px;
-		height: 187px; // 277px;
+		// height: 187px; // activate this line when footer image is enabled;
+		height: 50px;
 	}
 	.footer-content  {
 		@include background-image(linear-gradient(top, $color3, $color4));
