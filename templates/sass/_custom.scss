@@ -290,6 +290,12 @@ height: auto;
 		li {
 			border-left: 1px solid $color2;
 			height: 40px;
+			&:hover, &:focus {
+				a {
+				color: white !important;
+				}
+			}
+
 			&:last-child {
 				border-right: 1px solid $color2;
 			}
@@ -433,7 +439,12 @@ height: auto;
 		}
 		li {
 			border-left: 1px solid $color2;
-			height: 41px;
+			height: 41px; 
+			&:hover, &:focus {
+				a {
+					color: white !important;
+				}
+			}
 			&:last-child {
 				border-right: 1px solid $color2;
 			}
@@ -996,6 +1007,15 @@ a {
 //===========================================================
 // ProductCarousel
 
+// Image on top of slider in Branchen
+div.csc-textpic .csc-textpic-imagewrap .csc-textpic-image {
+	margin-bottom: 0;
+}
+
+#productCarousel {
+	margin-top: 10px;
+}
+
 #productCarousel .carousel-caption {
 	left: 0;
 	right: 0;
@@ -1166,6 +1186,28 @@ a {
 
 a.more {
 	// text-transform: capitalize;
+}
+
+.news .article .col-media {
+	padding-bottom: 15px;
+}
+
+// code in 1187 to 1195 can be removed once we have two news items
+.news .news-list-view .article:nth-child(1) {
+	border-bottom: 0;
+	padding-bottom: 0;
+}
+
+.news .news-list-view .article:nth-child(2) {
+	border-top: 1px solid #C2C2C2;
+	padding-top: 15px;
+}
+
+// uncomment this as soon as we have more than ten articles
+// it hides Seite X von Y at the moment
+
+.page-navigation > p {
+	display: none;
 }
 
 //===========================================================
@@ -1645,6 +1687,15 @@ body.rtl .formError .formErrorArrow {
 
 .contact-button {
 	margin-top: 36px;
+	// margin-bottom: 30px;
+}
+
+// setting the bottom border on content pages with text right
+// disable margin-bottom: 30px above in .contact-button)
+// set margin-bottom: 30px for #content_right wrapper
+
+#content_main,
+#content_right {
 	margin-bottom: 30px;
 }
 
