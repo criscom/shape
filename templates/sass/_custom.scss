@@ -1191,6 +1191,22 @@ a.more {
 
 .news .article .col-media {
 	padding-bottom: 15px;
+	@media only screen and (max-width: 767px) {
+		width: 100% !important;
+		padding-right: 0;
+	}
+}
+
+.news-single .article .news-img-wrap img {
+	@media only screen and (max-width: 767px) {
+		max-width: 100% !important;
+	}
+}
+
+.news-single .article .col-content {
+	@media only screen and (max-width: 767px) {
+		width: 100% !important;
+	}
 }
 
 // code in 1187 to 1195 can be removed once we have two news items
@@ -1209,6 +1225,12 @@ a.more {
 
 .page-navigation > p {
 	display: none;
+}
+
+// News article bug IE8
+
+.lt-ie9 #pid-48 .news-single .article .col-content {
+	width: 499px !important;
 }
 
 //===========================================================
