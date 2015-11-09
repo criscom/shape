@@ -1,0 +1,97 @@
+    <div class="section-header">
+      <div class="container">
+        <div class="logo-collapse">
+          <div class="logo logobar">
+            <a class="navbar-brand" href="/"><img title="Anton Paar" src="/fileadmin/img/logo-anton-paar.png" alt="Anton Paar"></a>
+          </div>
+          <div class="header-search header-right">
+            <form class="searchform" action="/suche/" method="get">
+              <div class="search-visible">
+                <!-- <label class="search-text">Suche</label> -->
+                <button type="button" class="search-button" data-toggle="collapse" data-target="#search">Suche</button>
+              </div>
+              <div class="search-toggle collapse" id="search">
+              <input type="text" name="tx_kesearch_pi1[sword]" value="">
+              <button type="submit" class="btn btn-mini">Go</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Static navbar -->
+    <div class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- <a class="navbar-brand" href="#">Project name</a> -->
+        </div>
+        <div class="navbar-collapse collapse">
+	  <f:cObject typoscriptObjectPath="lib.mainNav" />
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    <div class="container theme-showcase content-container" role="main">
+      <!--Breadcrumbs-->
+      <f:cObject typoscriptObjectPath="lib.breadcrumb" />
+      <!--TYPO3SEARCH_begin-->
+
+        <div class="content-wrapper">
+        <!-- Partials section -->
+          <f:if condition="{layout} == 1">
+            <f:render partial="ImageBelowimageRight.html" arguments="{contentImage:contentImage, contentBelowImage:contentBelowImage, contentMain:contentMain}" />
+          </f:if>
+
+          <f:if condition="{layout} == 2">
+            <f:render partial="LeftAndRight.html" arguments="{contentTop:contentTop, contentLeft:contentLeft, contentRight:contentRight}" />
+          </f:if>
+
+          <f:if condition="{layout} == 3">
+            <f:render partial="OneColumn.html" arguments="{content:content}" />
+          </f:if>
+
+          <f:if condition="{layout} == 4">
+            <f:render partial="SliderStart.html" arguments="{content:content}" />
+          </f:if>
+
+          <f:if condition="{layout} == 5">
+            <f:render partial="SliderLeftContentRight.html" arguments="{sliderLeft:sliderLeft, contentRight:contentRight}" />
+          </f:if>
+
+          <f:if condition="{layout} == 6">
+            <f:render partial="SliderProductLeftContentRightImageTop.html" arguments="{contentTop:contentTop, productsLeft:productsLeft, contentRight:contentRight}" />
+          </f:if>
+
+
+
+      <!-- Partials section END --> 
+
+      <!--TYPO3SEARCH_end-->
+      </div>
+
+    </div> <!-- /container -->
+
+    <div id="footer">
+       <div class="footer-image">
+        <div class="container"></div>
+       </div>
+      
+      <div class="footer-content">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-7 col-lg-7">Anton Paar ShapeTec GmbH</div>
+            <div class="col-xs-12 col-sm-6 col-md-5 col-lg-5">
+	      <f:cObject typoscriptObjectPath="lib.footerNav" />
+            </div>
+          </div>
+        </div> 
+      </div> <!-- /footer-content -->
+
+    </div> <!-- /footer -->
+
+

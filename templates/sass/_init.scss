@@ -123,6 +123,8 @@ $L: 60em; // 960px wide with 16px body font
 // Partials to be shared with all .scss files.
 // =============================================================================
 
+// Add Font Awesome for Globe icon
+// @import "font-awesome";
 // Add Compass' IE and vendor prefix support variables.
 @import "compass/support";
 // Better than Drupal's clearfix.
