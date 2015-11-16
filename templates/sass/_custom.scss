@@ -160,15 +160,15 @@ height: auto;
 	color: white;
   .language_switch-wrapper-inner {
     position: relative;
-    
-    @media (min-width: 950px) {
-      width: 940px;
-    }
-    @media (min-width: 768px) {
+    @media only screen and (min-width: 992px) {
+		  width: 940px;
+	  }
+    @media only screen and (min-width: 768px) {
       width: 750px;
     }
     margin: 0 auto;
     text-align: right;
+    
     #language_switch_container {
       &:after {
         content: "";
