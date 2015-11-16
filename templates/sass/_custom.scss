@@ -160,7 +160,13 @@ height: auto;
 	color: white;
   .language_switch-wrapper-inner {
     position: relative;
-    width: 940px;
+    
+    @media (min-width: 950px) {
+      width: 940px;
+    }
+    @media (min-width: 768px) {
+      width: 750px;
+    }
     margin: 0 auto;
     text-align: right;
     #language_switch_container {
@@ -173,6 +179,9 @@ height: auto;
         display: block;
         float: right;
         font-size: 12px;
+        @media only screen and (max-width: 480px) {
+      		font-size: 14px;
+      	}
       	cursor: pointer;
       	padding: 2px 4px 1px 2px;
       }
@@ -187,6 +196,9 @@ height: auto;
   position: absolute;
   display: none;
   width: 60px;
+  @media only screen and (max-width: 480px) {
+    width: 78px;
+  }
   top: 20px;
   right: 0;
 	margin: 0 auto;
@@ -206,6 +218,9 @@ height: auto;
 		a {
 			color: white;
 			font-size: 12px;
+			@media only screen and (max-width: 480px) {
+  			font-size: 14px;
+			}
 		}
 	}
 }
